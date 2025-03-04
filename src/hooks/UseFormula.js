@@ -4,11 +4,11 @@ import Swal from "sweetalert2";
 
 const UseFormula = () => {
 
-    const [ValorA,setValorA] = useState('');
-    const [ValorB,setValorB] = useState('');
-    const [ValorC,setValorC] = useState('');
-    const [Resultado,setResultado] = useState('');
-    const [Resultado2,setResultado2] = useState('');
+    const [ValorA, setValorA] = useState('');
+    const [ValorB, setValorB] = useState('');
+    const [ValorC, setValorC] = useState('');
+    const [Resultado, setResultado] = useState('');
+    const [Resultado2, setResultado2] = useState('');
 const Formula = () =>  {
 
     if (ValorA === '') {
@@ -18,9 +18,9 @@ const Formula = () =>  {
        } else if (ValorC === '') {
             Alerta('Ingrese el valor de C')
     }else{
-    let discriminante = Math.sqrt(Math.pow(Number(ValorB),2) - (4 * Number(ValorA) * Number(ValorC)));
-    let x1 = -Number(ValorB) + discriminante / (2*Number(ValorA)); 
-    let x2 = -Number(ValorB) - discriminante/ (2*Number(ValorA));
+    let discriminante = Math.sqrt(Math.pow(parseFloat(ValorB),2) - (4 * parseFloat(ValorA) * parseFloat(ValorC)));
+    let x1 = -parseFloat(ValorB) + discriminante / (2*parseFloat(ValorA)); 
+    let x2 = -parseFloat(ValorB) - discriminante/ (2*parseFloat(ValorA));
     setResultado(x1);
     setResultado2(x2);
     }
