@@ -3,7 +3,7 @@ import UseFormula from "../hooks/UseFormula";
 const Formula = () => {
 
     const {
-        valorA,
+        ValorA,
         ValorB,
         ValorC,
         setValorA,
@@ -23,7 +23,7 @@ const Formula = () => {
             <div className="row justify-content-center">
                 <div className="col-6 mb-3">
                     <label className="form-label">Ingrese valor de a:</label>
-                    <input type="number" className="form-control" value={valorA} onChange={(e) => setValorA(e.target.value)} />
+                    <input type="number" className="form-control" value={ValorA} onChange={(e) => setValorA(e.target.value)} />
                 </div>
             </div>
 
