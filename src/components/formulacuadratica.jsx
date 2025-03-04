@@ -42,14 +42,14 @@ const Formula = () => {
             </div>
             <div className="row justify-content-center">
                 <div className="col-6 mb-3">
-                    <label className="form-label">Resultado 1:</label>
+                    <label className="form-label">Resultado x1:</label>
                     <input type="number" className="form-control" value={Resultado} readOnly />
                 </div>
             </div>
 
             <div className="row justify-content-center">
                 <div className="col-6 mb-3">
-                    <label className="form-label">Resultado 2:</label>
+                    <label className="form-label">Resultado x2:</label>
                     <input type="number" className="form-control" value={Resultado2} readOnly />
                 </div>
             </div>
