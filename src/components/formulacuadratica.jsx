@@ -13,7 +13,7 @@ const Formula = () => {
         Resultado2,
         Formula,
         Limpiar
-    } = UseFormula();
+    } = UseFormula()
 
 
 
