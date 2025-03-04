@@ -18,9 +18,9 @@ const Formula = () =>  {
        }   else if (ValorC === '') {
             Alerta('Ingrese el valor de C')
     } else{
-    let discriminante= Math.sqrt(Math.pow(Number(ValorB),2) - (4 * Number(ValorA) * Number(ValorC)));
-    let x1 = (-Number(ValorB) + discriminante) / (2*Number(ValorA)); 
-    let x2 = (-Number(ValorB) - discriminante) / (2*Number(ValorA));
+    let discriminante = Math.sqrt(Math.pow(Number(ValorB),2) - (4 * Number(ValorA) * Number(ValorC)));
+    let x1 = -Number(ValorB) + discriminante / (2*Number(ValorA)); 
+    let x2 = -Number(ValorB) - discriminante/ (2*Number(ValorA));
     setResultado(x1);
     setResultado2(x2);
     }
@@ -28,9 +28,9 @@ const Formula = () =>  {
 
 const Limpiar = () => {
 
-    setValorA('');
-    setValorB('');
-    setValorC('');
+    setValorA('')
+    setValorB('')
+    setValorC('')
     setResultado('');
     setResultado2('');
 }
