@@ -18,9 +18,9 @@ const Formula = () =>  {
        } else if (ValorC === '') {
             Alerta('Ingrese el valor de C')
     }else{
-    let discriminante = Math.sqrt(Math.pow(parseFloat(ValorB),2) - (4 * parseFloat(ValorA) * parseFloat(ValorC)));
-    let x1 = - parseFloat(ValorB) + discriminante / (2 * parseFloat(ValorA)); 
-    let x2 = - parseFloat(ValorB) - discriminante / (2 * parseFloat(ValorA));
+    let discriminante = Math.pow(parseFloat(ValorB),2) - 4 * parseFloat(ValorA) * parseFloat(ValorC);
+    let x1 = ((-parseFloat(ValorB) + Math.sqrt(discriminante)) / (2 * parseFloat(ValorA))); 
+    let x2 = ((-parseFloat(ValorB) - Math.sqrt(discriminante)) / (2 * parseFloat(ValorA)));
     setResultado(x1);
     setResultado2(x2);
     }
